@@ -8,4 +8,4 @@ One can include images:
 
 ## What's this blog you ask?
 
-Well it is just a blog, like this fast.ai's blog [fast.ai's blog](https://www.fast.ai). Posts will appear after this file. 
+Well it is just a blog, like this [fast.ai's blog](https://www.fast.ai). Posts will appear after this file. 
