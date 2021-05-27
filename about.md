@@ -1,4 +1,4 @@
-# Hello!
+# About
 
 * My name is Vamsi and I am a Data Scientist at [Allbirds](https://www.allbirds.com/), help sell some really good shoes to people who want them. 
 
