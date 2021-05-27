@@ -1,6 +1,6 @@
 # About
 
-* My name is Vamsi and I am a Data Scientist at [Allbirds](https://www.allbirds.com/), help sell some really good shoes to people who want them. 
+* My name is Vamsi and I am a Data Scientist at [Allbirds](https://www.allbirds.com/), bringing them to those who don't know of their existence, and helping sell some really good shoes to people who might want them.
 
 * Earlier, I worked [Dun & Bradstreet](https://www.dnb.com/) helping the Advanced Analytics Team put ML models into production; and with [Axtria](https://www.axtria.com/) consulting with American Express' Small Merchant Risk team.
 
