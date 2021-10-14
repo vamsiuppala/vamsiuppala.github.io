@@ -1,4 +1,4 @@
-# fastai Lesson 1
+# fastai - lesson 1
 ### What do you need to get started?
 * Very little math
 * Small data is good enough
