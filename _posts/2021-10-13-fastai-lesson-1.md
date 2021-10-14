@@ -1,5 +1,5 @@
 # fastai - lesson 1
-[Lecture](https://course.fast.ai/videos/?lesson=1)
+[Lecture Video](https://course.fast.ai/videos/?lesson=1)
 
 ### What do you need to get started?
 * Very little math
