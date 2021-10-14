@@ -36,3 +36,6 @@
 * **Neural Networks** are some of the most flexible functions (programs), that are ***parameterized*** by a set of weights, to solve any problem (for e.g. differentiating between cats and dogs)
 * This training is possible using specific methods (like SGD). We'll get into it later.
 
+### What to look out for while training models
+* Consider how a model interacts with its environment - feedback loops, proxy choices etc.
+* 
