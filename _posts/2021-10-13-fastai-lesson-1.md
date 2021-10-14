@@ -1,4 +1,6 @@
 # fastai - lesson 1
+(Lecture)[https://course.fast.ai/videos/?lesson=1]
+
 ### What do you need to get started?
 * Very little math
 * Small data is good enough
@@ -14,3 +16,8 @@
 
 ### What is DL?
 * Started off as simple neural networks
+
+### Approach
+* Learn top-down
+* Learn as you go
+* Focus on projects
