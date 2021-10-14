@@ -29,6 +29,10 @@
 4. Rinse and repeat Steps 1-3 until Performance is within acceptable range
 5. The resulting 'Trained Model, with Tuned weights' can now be used to compute Results for unforseen data
 
-* Steps 1 to 4 creates the "Model"
-* Step 5 is using this created "Model"
+* Machine Learning = Steps 1 to 4 creates the "Model" = Letting the computer learn a program
+* Inference = Step 5 is using this created "Model" = Using this program as any other regular program
+
+### Why neural networks?
+* **Neural Networks** are some of the most flexible functions (programs), that are ***parameterized*** by a set of weights, to solve any problem (for e.g. differentiating between cats and dogs)
+* This training is possible using specific methods (like SGD). We'll get into it later.
 
