@@ -38,4 +38,6 @@
 
 ### What to look out for while training models
 * Consider how a model interacts with its environment - feedback loops, proxy choices etc.
-* 
+
+### Next?
+* Won't be writing any blogs / notes on rest of the classes. Will try to write blogs on work put into those classes
