@@ -1,4 +1,4 @@
-# Track your Predictions using pymsteams and Microsoft Teams
+# Use pymsteams to keep track of your metrics through Teams
 
 ## Why track predictions?
 
