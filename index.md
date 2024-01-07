@@ -1,3 +1,3 @@
-## What's this blog you ask?
+## What you will find here
 
-I am mostly gonna scribble about my journey as a data scientist here. There could be posts about what I am learning, what I am working on, and anything new and interesting I am reading about; but I'll try to keep it to analytics and data science as much as possible.
+Notes about my work as a Data Scientist. Mostly using it to document what I could have found useful myself a few weeks ago; mostly limited to analytics and data science as much as possible.
