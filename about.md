@@ -1,15 +1,11 @@
-## About
+# Vamsi Uppala
 
-### Introduction
-* My name is Vamsi and I am a Data Scientist at [ServiceNow](https://www.servicenow.com/).
-* I build end-to-end Machine Learning and non-ML models to forecast some of ServiceNow's key revenue susbscription KPIs.
-* I have ~9 years of experience as a Full Stack Data Scientist, in Experimentation (A/B Testing, Causal Inference), Machine Learning (user retention, forecasts) and have some MLOps knowledge (Azure AI).
-* I write code in Python and SQL. 
+[Tech Blog](https://vamsiuppala.github.io/)
 
-### My previous roles:
-* Data Scientist - Product at [DoorDash](https://www.doordash.com/) - helped with making Dasher pay fair. The biggest projects I worked on were to build and deploy dasher retention models using Random Forests.
-* Data Scientist - Fullstack at [Allbirds](https://www.allbirds.com/) - worked on customer acquisition attribution models, paid channel marketing models, sales forecasting.
-* Analytics Consulting at [Dun & Bradstreet](https://www.dnb.com/) and [Axtria](https://www.axtria.com/).
+Hi! I am Vamsi. I am a Data Scientist at ServiceNow, working on building machine learning models to predict some key revenue subscription KPIs. I used to work at DoorDash, Allbirds, Dun & Bradstreet and Axtria. My interests in Data Science include building simple models, product analytics, data science metric tracking tooling, MLOps and production, simulations and explainable AI.
 
-### Eduction:
-* I have a Masters in Industrial Engineering with a focus on Operations Research from Purdue University in Spring 2015.
+I have ~9 years of experience as a Full Stack Data Scientist, in Experimentation (A/B Testing, Causal Inference), Machine Learning (user retention, forecasts) and have some MLOps knowledge (Azure AI).
+
+I write extensively in Python and SQL and rely on Azure for MLOps. 
+
+I have a Masters in Industrial Engineering (Operations Research) from Purdue University and a Bachelors in Mechanical Engineering from BITS Pilani.
