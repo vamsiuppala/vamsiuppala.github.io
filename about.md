@@ -2,7 +2,7 @@
 
 <img src="/images/about/vamsi_photo2.png"/>
 
-[Tech Blog](https://vamsiuppala.github.io/)
+[Tech Blog](https://vamsiuppala.github.io/)|[Linkedin](https://www.linkedin.com/in/vamsiuppala/)|[Github](https://github.com/vamsiuppala)|[About](https://vamsiuppala.github.io/about.html)
 
 Hi! I am Vamsi. I am a Data Scientist at ServiceNow, working on building machine learning models to predict some key revenue subscription KPIs. I used to work at DoorDash, Allbirds, Dun & Bradstreet and Axtria. My interests in Data Science include building simple models, product analytics, data science metric tracking tooling, MLOps and production, simulations and explainable AI.
 
