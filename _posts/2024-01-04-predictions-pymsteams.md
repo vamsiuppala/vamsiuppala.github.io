@@ -41,32 +41,30 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 <!-- <img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" /> -->
 
 ```python
-
 import pymsteams
-def get_current_and_previous_predictions():
+def get_current_and_previous_values():
 
     # write the code to fetch these two from your database or prediction scoring run process
-    previous prediction = 200
-    current prediction = 300
+    previous_val = 200
+    current_val = 300
 
-    return previous_prediction, current_prediction
+    return previous_val, current_val
 
 # create the function to send teams alert
-def teams_alert_content (previous_pred, current_pred, url):
+def teams_alert_content (previous_val, current_val, url):
     # Create webhook
-    myTeamsMessage = pymsteams. connectorcard (url)
+    myTeamsMessage = pymsteams.connectorcard(url)
     # Create Text
-    myTeamsMessage.title("Prediction Change Notification")
-    myTeamsMessage.text("Prediction has changed from $" + str(previous_pred) + " to $" + str(current_pred))
+    myTeamsMessage.title("Value Change Notification")
+    myTeamsMessage.text("Value has changed from $" + str(previous_val) + " to $" + str(current_val))
     myTeamsMessage.send()
 
 #copy the webhook url here from Teams
 webhook_url = "<webhook-url-from-teams-connectors>"
 
 #send the alert in Teams
-previous prediction, current prediction = get_current_and_previous_predictions()
-teams_alert_content (previous_prediction, current_prediction, webhook_url)
-
+previous_value, current_value = get_current_and_previous_values()
+teams_alert_content(previous_value, current_value, webhook_url)
 ```
 
 ## Result
