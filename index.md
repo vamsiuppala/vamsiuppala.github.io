@@ -1,3 +1,4 @@
-## What you will find here
+<!-- ## What you will find here
 
-Notes about my work as a Data Scientist. Mostly using it to document what I could have found useful a few weeks ago, i.e. help someone one step behind me. It is mostly limited to analytics and data science as much as possible.
+I try to write about what I learnt recently in my professional life as a Data Scientist. It is geared for the reader who is one step behind me. I was told that the best way to do that is to write to my alter ego from a few months ago. 
+It turns out that writing down also helps me understand what I write better. -->

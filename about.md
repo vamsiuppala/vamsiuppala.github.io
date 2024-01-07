@@ -1,4 +1,4 @@
-# Vamsi Uppala
+# About
 
 [Tech Blog](https://vamsiuppala.github.io/)
 
