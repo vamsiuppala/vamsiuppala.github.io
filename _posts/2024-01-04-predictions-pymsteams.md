@@ -38,7 +38,7 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 
 ### Code to send a simple Teams Alert
 
-<img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" />
+<!-- <img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" /> -->
 
 ```python
 
