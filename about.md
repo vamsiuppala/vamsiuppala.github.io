@@ -1,6 +1,6 @@
 # About
 
-<img src="/images/about/vamsi_photo.png"/>
+<img src="/images/about/vamsi_photo2.png"/>
 
 [Tech Blog](https://vamsiuppala.github.io/)  [Github](https://github.com/vamsiuppala)  [Linkedin](https://www.linkedin.com/in/vamsiuppala/)  [About](https://vamsiuppala.github.io/about.html)
 
