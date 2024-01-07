@@ -1,12 +1,14 @@
 # Use pymsteams to keep track of your metrics through Teams
 
-## Why track predictions?
+## Why track metrics?
 
-One of these important forecasts my team at ServiceNow owns is how much new business the company will likely end up bringing in the next four quarters. Given the importance and the need for an often-updated forecast, we predict these metrics each hour, with the most important one being overall new business dollars we might make in the current quarter. The later in the quarter we are, the more important the metric gets, attracting more eyes and more questions.
+My team at ServiceNow builds and tracks predictions / forecasts for some of the key revenue metrics - new business, renewal subscriptions, new logos signed up, customer retention etc. Given the importance and the need for an often-updated forecast, these predictions are updated hourly through a job deployed through Azure AI, with the predicted metrics being written into a table in Snwoflake, consumed through Tableau dashboards. The later in the quarter we are, the more important the metric prediction gets, attracting lots of eyes and lots of questions.
 
-Given its importance, we had to track the metric movement every hour 24x7 and report on big swings. This gets incredibly annoying if it needs to be tracked on a dashboard that has to be logged into through your work machine – resulting in having to carry it around everywhere.
+Monitoring a KPI prediction is similar to monitoring an ever changing KPI. A business user might rely on dashboards for this as needed, but as the backend builders, we found it tedious to log into / refresh dashboards frequently 24x7. 
 
-The solution we came up with is to put some of these metrics programmatically on an access-restricted Teams channel. Once we started sending the top metrics to the channel every hour at the end of the production job run, we did not need to keep a track of them directly through slowly refreshing dashboards built for different purposes. It got as easy as checking our Teams for the latest messages on the phone; only this channel started to contain all the important metric notifications. What’s even better is that all the messages made up for a nice history to rely on easily.
+## Eureka
+
+We realized that it would be easier for us to be served the predictions through a more accessible channel - Teams, and went around looking for ways to automatically send an alert in Teams through webhooks in case of a big change in the KPI / prediction. The pymsteams package does this efficiently just in two lines of code.
 
 ## Tools
 
@@ -37,6 +39,35 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 ### Code to send a simple Teams Alert
 
 <img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" />
+
+```python
+
+import pymsteams
+def get_current_and_previous_predictions():
+
+    # write the code to fetch these two from your database or prediction scoring run process
+    previous prediction = 200
+    current prediction = 300
+
+    return previous_prediction, current_prediction
+
+# create the function to send teams alert
+def teams_alert_content (previous_pred, current_pred, url):
+    # Create webhook
+    myTeamsMessage = pymsteams. connectorcard (url)
+    # Create Text
+    myTeamsMessage.title("Prediction Change Notification")
+    myTeamsMessage.text("Prediction has changed from $" + str(previous_pred) + " to $" + str(current_pred))
+    myTeamsMessage.send()
+
+#copy the webhook url here from Teams
+webhook_url = "<webhook-url-from-teams-connectors>"
+
+#send the alert in Teams
+previous prediction, current prediction = get_current_and_previous_predictions()
+teams_alert_content (previous_prediction, current_prediction, webhook_url)
+
+```
 
 ## Result
 
