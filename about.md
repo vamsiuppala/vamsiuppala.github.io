@@ -8,15 +8,17 @@
 
 I am a Data Scientist at ServiceNow, working on building machine learning models to predict some key revenue subscription KPIs. 
 
-I write at [A Pinch of Data](https://vamsiuppala.github.io/about.html).
+I write at [A Pinch of Data](https://vamsiuppala.github.io/).
 
 I document everything I learn and reuse [here](https://gist.github.com/vamsiuppala).
 
-I used to work at DoorDash, Allbirds, Dun & Bradstreet and Axtria. My interests in Data Science include building simple models, product analytics, metrics (serving, tooling, monitoring, i.e. Ops), simulations and explainable AI.
-
 I have ~9 years of experience as a Full Stack Data Scientist in Experimentation (A/B Testing, causal inference), Machine Learning (user retention, forecasts) and have some MLOps knowledge (in Azure AI).
 
-I write extensively in Python and SQL and rely on Azure for MLOps. I have built dashboards in Sigma and Power BI. I rely on streamlit to write data apps.
+My interests in Data Science include building simple models, product analytics, metrics (serving, tooling, monitoring, i.e. Ops), simulations and explainable AI.
+
+Previously, I worked at DoorDash, Allbirds, Dun & Bradstreet and Axtria.
+
+I write extensively in Python and SQL and rely on Azure for MLOps. I have built dashboards in Sigma and Power BI and data apps in streamlit.
 
 I have a Masters in Industrial Engineering (Operations Research) from Purdue University and a Bachelors in Mechanical Engineering from BITS Pilani.
 
