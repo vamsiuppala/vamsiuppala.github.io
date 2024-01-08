@@ -2,25 +2,22 @@
 
 ## Why track metrics?
 
-My team at ServiceNow builds and tracks predictions / forecasts for some of the key revenue metrics - new business, renewal subscriptions, new logos signed up, customer retention etc. Given the importance and the need for an often-updated forecast, these predictions are updated hourly through a job deployed through Azure AI, with the predicted metrics being written into a table in Snwoflake, consumed through Tableau dashboards. The later in the quarter we are, the more important the metric prediction gets, attracting lots of eyes and lots of questions.
+Usually businesses keep an eye out on metrics / KPIs using dashboards that they are surfaced to. When it comes to important metrics, the teams that create these metrics have to regularly check the dashboards, or other backend srevices that output these metrics on a regular basis for monitoring.
+For a Data Team that owns some KPIs, it gets tedious to keep an eye out on them through multiple dashboards, frequently, and 24x7. Dashboards are meant for business users. They are never flexible / deep enough for a data scientist behind the data. It pretty soon gets tedious to log into / refresh dashboards frequently 24x7. 
 
-Monitoring a KPI prediction is similar to monitoring an ever changing KPI. A business user might rely on dashboards for this as needed, but as the backend builders, we found it tedious to log into / refresh dashboards frequently 24x7. 
+## Monitor KPIs through Teams
 
-## Eureka
-
-We realized that it would be easier for us to be served the predictions through a more accessible channel - Teams, and went around looking for ways to automatically send an alert in Teams through webhooks in case of a big change in the KPI / prediction. The pymsteams package does this efficiently just in two lines of code.
+It is easier for data teams to be served the predictions through a more accessible channel - Teams. Using the [pymsteams](https://pypi.org/project/pymsteams/) package lets us automatically send an alert in Teams through webhooks whenever the monitored KPIs see a noticebale shift (defined by business / data team). Since it is an open source python library, it is easy to integrate into any automated production processes.
 
 ## Tools
 
 Steps to get started with using Teams to track a metric:
 
-### Install pymsteams
+#### Install pymsteams
 
-Since my workplace uses Microsoft Teams, we relied on the pymsteams package. It’s a Python Wrapper Library to send requests to Microsoft Teams Webhooks.
+Get started by installing the package using [pip](https://pypi.org/project/pymsteams/). The instructions are straightforward.
 
-We got started by installing the package using [pip](https://pypi.org/project/pymsteams/). The instructions were straightforward.
-
-### Setup Teams Incoming Webhook
+#### Setup Teams Incoming Webhook
 
 An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) lets external applications share content in Microsoft Teams channels.
 
@@ -36,7 +33,7 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 
 4.  Copy the URL it creates and save it to use it later.
 
-### Code to send a simple Teams Alert
+#### Code to send a simple Teams Alert
 
 <!-- <img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" /> -->
 
@@ -44,18 +41,18 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 import pymsteams
 def get_current_and_previous_values():
 
-    # write the code to fetch these two from your database or prediction scoring run process
+    # write the code to fetch the two values from your upstream process
     previous_val = 200
     current_val = 300
 
     return previous_val, current_val
 
-# create the function to send teams alert
+# create the function to send a Teams connect card as an alert
 def teams_alert_content (previous_val, current_val, url):
     # Create webhook
     myTeamsMessage = pymsteams.connectorcard(url)
     # Create Text
-    myTeamsMessage.title("Value Change Notification")
+    myTeamsMessage.title("Value Change Alert")
     myTeamsMessage.text("Value has changed from $" + str(previous_val) + " to $" + str(current_val))
     myTeamsMessage.send()
 
@@ -69,8 +66,8 @@ teams_alert_content(previous_value, current_value, webhook_url)
 
 ## Result
 
-We first deployed this simple example code into a length production-run process to automatically dump the previous and latest predictions into a Teams Channel dedicated to tracking the most important prediction owned by my Team.
+When I first deployed this simple example code into a lengthy Azure AI run pipeline job, it started to dump the exact changes I'd wanted to monitor in KPIs directly into a Teams Channel dedicated for monitoring KPIs. It significantly reduced the stress of having to monitor KPIs actively through various dashboards.
 
-### Teams alert content
+#### Teams alert content example
 
 <img src="/images/2024-01-04-predictions-pymsteams/image5.png" style="width:6.5in;height:1.88472in" />
