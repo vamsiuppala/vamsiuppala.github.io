@@ -6,7 +6,7 @@
 
 ### Hi, I'm Vamsi 👋
 
-I am a Data Scientist at ServiceNow, working on building machine learning models to predict some key revenue subscription KPIs. 
+I am a Data Scientist at ServiceNow, building explainable models forecasting some key revenue subscription KPIs. 
 
 I write at [A Pinch of Data](https://vamsiuppala.github.io/).
 
