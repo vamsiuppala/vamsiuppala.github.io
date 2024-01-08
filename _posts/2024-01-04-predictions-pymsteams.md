@@ -7,7 +7,7 @@ For a Data Team that owns some KPIs, it gets tedious to keep an eye out on them 
 
 ## Monitor KPIs through Teams
 
-It is easier for data teams to be served the predictions through a more accessible channel - Teams. Using the [pymsteams](https://pypi.org/project/pymsteams/) package lets us automatically send an alert in Teams through webhooks whenever the monitored KPIs see a noticebale shift (defined by business / data team). Since it is an open source python library, it is easy to integrate into any automated production processes.
+It is easier for data teams to be served the KPIs through a more accessible channel - Teams. Using the [pymsteams](https://pypi.org/project/pymsteams/) package lets us automatically send an alert in Teams through webhooks whenever the monitored KPIs see a noticebale shift (defined by business / data team). Since it is an open source python library, it is easy to integrate into any automated production processes.
 
 ## Tools
 
