@@ -1,3 +1,5 @@
+# Snowflake VS Code Extension
+
 I did not know this was possible. Most of my dev work is split into writing Python code in VS Code and SQL in Snowflake’s Snowsight UI. Turns out you could connect to your Snowflake warehouse using a [<u>Snowflake Extension for VS Code</u>](https://docs.snowflake.com/en/user-guide/vscode-ext).
 
 Steps to get you there:
@@ -8,13 +10,16 @@ Go to your Snowsight account, at the bottom left you should see an account indic
 
 <img src="/images/2024-01-09-snowflake-vs-code-extension/image1.png" style="width:6.5in;height:4.02778in" />
 
-The URL should look like this
+The URL should look like this:
 
-<span class="mark">https://\<account-identifier\>.snowflakecomputing.com</span>
+https://\<account-identifier\>.snowflakecomputing.com
+
+<!-- <span class="mark">https://\<account-identifier\>.snowflakecomputing.com</span> -->
 
 <span class="mark">Copy the account-identifier.</span>
 
 ## Install Extension
+Next, open VS Code and search for Snowflake in Extensions. Install it.
 
 <span class="mark">Next, open VS Code and search for Snowflake in Extensions. Install it.</span>
 
