@@ -27,3 +27,5 @@ client = OpenAI(
     api_key = openai_api_key
 )
 ```
+
+<script src="https://gist.github.com/vamsiuppala/e4783d2e7133456901bbb12e0bc8203c.js"></script>
