@@ -16,7 +16,8 @@ For most ML problems, anything beyond 200-300 dimensions has diminishing returns
 
 Once a multi-dimensional embedded representation of a word, sentence or image is created, the possibilities are endless. For e.g., a mathematical nearness (cosine similarity) score of two embeddings are highly useful in content understanding, search etc.
 
-<img src="/images/2024-02-18-embeddings/projection.png" style="width:4.0in;height:3.0in" />
+<img src="/images/2024-02-18-embeddings/projection.png" style="width:4.0in;height:4.0in" />
+
 Embeddings are probably most useful when it comes to surfacing information that is relevant, i.e. an item that is of interest to the user. This is important in content recommendations, purchase recommendations and information retrieval platforms like search engines.
 
 
