@@ -79,7 +79,6 @@ For e.g.
 5. Once an iteration through the training set is completed, it creates a model that retrieves both the probability of a given word being the correct word, and the entire embedding space for the vocabulary.
 
 Context Window:
-
-> For example, if we have the phrase "No bird \[blank] too high", we’re trying to predict that the answer is "soars" with a given softmax probability, aka ranked against other words.
+In the sentence "No bird \[blank] too high", the model is built to predict the answer "soars" and the context window is the two words preceding - "No bird" and the two words succeeding "too high" together form the context window.
 
 In a nutshell, word embeddings can be defined as a dense representation of words in the form of vectors in low-dimensional space. These embeddings are accompanied by l**earnable vectors, or parameterized functions**. They update themselves during backpropagation using a loss function, and try to find a good relationship between words, preserving both semantic and synaptic properties.
