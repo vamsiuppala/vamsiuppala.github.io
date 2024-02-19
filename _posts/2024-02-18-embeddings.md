@@ -11,12 +11,12 @@ What does embedding (the verb) do?
 
 Raw input data is passed into an ML model that compress the multidimensional input data by compressing it into a lower-dimensional space. The result, a set of vectors, is called the **embedding space.**
 
-<img src="/images/2024-02-18-embeddings/process_of_embedding.png" style="width:6.0in;height:3.5in" />
+<img src="/images/2024-02-18-embeddings/process_of_embedding.png" style="width:3.5in;height:6.0in" />
 For most ML problems, anything beyond 200-300 dimensions has diminishing returns.
 
 Once a multi-dimensional embedded representation of a word, sentence or image is created, the possibilities are endless. For e.g., a mathematical nearness (cosine similarity) score of two embeddings are highly useful in content understanding, search etc.
 
-<img src="/images/2024-02-18-embeddings/projection.png" style="width:6.0in;height:3.5in" />
+<img src="/images/2024-02-18-embeddings/projection.png" style="width:3.5in;height:6.0in" />
 Embeddings are probably most useful when it comes to surfacing information that is relevant, i.e. an item that is of interest to the user. This is important in content recommendations, purchase recommendations and information retrieval platforms like search engines.
 
 
@@ -47,7 +47,7 @@ Fundamental concepts:
 
 In recommendation systems, in the context of Flutter, rows are the individual data about each user, and column data represents the given data about each post. If we can factor this matrix, that is decompose it into two matrices (Q and PT) that, when multiplied, the product is our original matrix (R), we can learn the "latent factors" or features that allow us to group similar users and items together to recommend them.
 
-<img src="/images/2024-02-18-embeddings/decomposition.png" style="width:6.0in;height:3.5in" />
+<img src="/images/2024-02-18-embeddings/decomposition.png" style="width:3.5in;height:6.0in" />
 Here, the matrix R has the count of each word in all of the users' posts. Considering the vocabulary of the entire english language is likely to be represented by "words" here, it's obvious this is going to be a really sparse vector. 
 
 One-hot encoding, TF-IDF, SVD, LSA, LDA etc. are some of the earlier approaches to embedding that focused on generating sparse vectors that can given an indication that words are related, but they couldn't identify semantic relationship between them. For example, “The dog chased the cat” and “the cat chased the dog” would have the same distance (i.e. cosine similarity) in the vector space, even though they’re two completely different sentences.
@@ -56,11 +56,11 @@ One-hot encoding, TF-IDF, SVD, LSA, LDA etc. are some of the earlier approaches 
 
 Let's learn the CBOW method of building these embeddings.
 
-<img src="/images/2024-02-18-embeddings/cbow.png" style="width:6.0in;height:3.5in" />
+<img src="/images/2024-02-18-embeddings/cbow.png" style="width:3.5in;height:6.0in" />
 
 Here, we remove a word from the middle of a phrase (known as the context window), and train the model to predict the probability that a given word fills the blank. If we maximize the probability that the word belongs in the sentences, we'll learn good embeddings for our input corpus (i.e. the list of all sentences / posts that is collected to train). 
 
-<img src="/images/2024-02-18-embeddings/cbow_neural_network_architecture.png" style="width:6.0in;height:3.5in" />
+<img src="/images/2024-02-18-embeddings/cbow_neural_network_architecture.png" style="width:3.5in;height:6.0in" />
 
 In Flutter app's case, our corpus is the list of all the posts we've collected. 
 
