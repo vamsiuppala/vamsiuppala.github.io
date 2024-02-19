@@ -11,7 +11,7 @@ What does embedding (the verb) do?
 
 Raw input data is passed into an ML model that compress the multidimensional input data by compressing it into a lower-dimensional space. The result, a set of vectors, is called the **embedding space.**
 
-<img src="/images/2024-02-18-embeddings/process_of_embedding.png" style="width:4.0in;height:3.0in" />
+<img src="/images/2024-02-18-embeddings/process_of_embedding.png" style="width:8.0in;height:3.0in" />
 For most ML problems, anything beyond 200-300 dimensions has diminishing returns.
 
 Once a multi-dimensional embedded representation of a word, sentence or image is created, the possibilities are endless. For e.g., a mathematical nearness (cosine similarity) score of two embeddings are highly useful in content understanding, search etc.
