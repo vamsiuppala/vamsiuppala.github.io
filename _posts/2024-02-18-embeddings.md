@@ -56,7 +56,7 @@ One-hot encoding, TF-IDF, SVD, LSA, LDA etc. are some of the earlier approaches 
 
 Let's learn the CBOW method of building these embeddings.
 
-<img src="/images/2024-02-18-embeddings/cbow.png" style="width:4.0in;height:3.0in" />
+<img src="/images/2024-02-18-embeddings/cbow.png" style="width:7.0in;height:3.0in" />
 
 Here, we remove a word from the middle of a phrase (known as the context window), and train the model to predict the probability that a given word fills the blank. If we maximize the probability that the word belongs in the sentences, we'll learn good embeddings for our input corpus (i.e. the list of all sentences / posts that is collected to train). 
 
