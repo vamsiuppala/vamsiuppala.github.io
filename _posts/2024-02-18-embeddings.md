@@ -1,8 +1,12 @@
 [Embeddings](https://vickiboykis.com/what_are_embeddings/) are numerical representations of machine learning features used as input to deep learning models. One-hot encoding, TF-IDF and PCA were early ways of compressing large amounts of textual data. Word2Vec was first step forward in moving on from simple statistical representations to semantic meaning of words. Transformers, transfer learning, generative methods etc. have all contributed to the explosion in use of embeddings and establishing them as a foundational ML data structure.
 
-All of the notes here are a summary of the embeddings [paper](https://vickiboykis.com/what_are_embeddings/) by [Vicki Boykis](https://vickiboykis.com/). Embeddings are compressed context-specific representations of content.
+Most of the notes here are a summary of the embeddings [paper](https://vickiboykis.com/what_are_embeddings/) by [Vicki Boykis](https://vickiboykis.com/). Embeddings are compressed context-specific representations of content.
+
+An embedding is a vector (list) of floating point numbers. The distance between two vectors measures their relatedness. Small distances suggest high relatedness and large distances suggest low relatedness.
 
 Embeddings are deep learning models' internal representations of their input data. To build powerful DL models, companies collect and feed 100s of millions of TBs of multimodal data to these models. They are now a critical component of ML systems. They are used for user consumption recommendations, but also at places like Netflix, to make content decisions based on user preference popularity. 
+
+When it comes to text data, word embeddings capture the context of the paragraph or previous sentences along with capturing the semantic and syntactic properties and similarities of the same. 
 
 What does embedding (the verb) do?
 1. Transforms multimodal input into representations that are easier to perform intensive computation on, in the form of vectors, tensors, or graphs.
@@ -81,4 +85,7 @@ For e.g.
 Context Window:
 In the sentence "No bird \[blank] too high", the model is built to predict the answer "soars" and the context window is the two words preceding - "No bird" and the two words succeeding "too high" together form the context window.
 
-In a nutshell, word embeddings can be defined as a dense representation of words in the form of vectors in low-dimensional space. These embeddings are accompanied by l**earnable vectors, or parameterized functions**. They update themselves during backpropagation using a loss function, and try to find a good relationship between words, preserving both semantic and synaptic properties.
+In a nutshell, word embeddings can be defined as a dense representation of words in the form of vectors in low-dimensional space. These embeddings are accompanied by **learnable vectors, or parameterized functions**. They update themselves during backpropagation using a loss function, and try to find a good relationship between words, preserving both semantic and synaptic properties.
+
+
+
