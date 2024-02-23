@@ -21,19 +21,18 @@ Get started by installing the package using [pip](https://pypi.org/project/pymst
 
 An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet) lets external applications share content in Microsoft Teams channels.
 
-1.  Get your Teams Connectors webhook for the channel you setup to track the metric(s)
+##### Get your Teams Connectors webhook for the channel you setup to track the metric(s)
 
 <img src="/images/2024-01-04-predictions-pymsteams/image1.png" style="width:1.08205in;height:2.13115in" />
 
-2.  Configure an Incoming Webhook<img src="/images/2024-01-04-predictions-pymsteams/image2.png" style="width:6.5in;height:0.69167in" />
+##### Configure an Incoming Webhook<img src="/images/2024-01-04-predictions-pymsteams/image2.png" style="width:6.5in;height:0.69167in" />
 
-3.  Give it a name and create the webhook
+##### Give it a name and create the webhook
 
 <img src="/images/2024-01-04-predictions-pymsteams/image3.png" style="width:4.43181in;height:4.2784in" />
+Copy the URL it creates and save it to use it later.
 
-4.  Copy the URL it creates and save it to use it later.
-
-#### Code to send a simple Teams Alert
+### Code to send a simple Teams Alert
 
 <!-- <img src="/images/2024-01-04-predictions-pymsteams/image4.png" style="width:6.5in;height:3.85833in" /> -->
 
