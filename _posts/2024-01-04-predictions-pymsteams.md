@@ -23,7 +23,7 @@ An [Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/
 
 ##### Get your Teams Connectors webhook for the channel you setup to track the metric(s)
 
-<img src="/images/2024-01-04-predictions-pymsteams/image1.png" style="width:1.08205in;height:2.13115in" />
+<img src="/images/2024-01-04-predictions-pymsteams/image1.png" style="width:2.0in;height:4.0in" />
 
 ##### Configure an Incoming Webhook<img src="/images/2024-01-04-predictions-pymsteams/image2.png" style="width:6.5in;height:0.69167in" />
 
