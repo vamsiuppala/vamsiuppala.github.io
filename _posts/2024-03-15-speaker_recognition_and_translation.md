@@ -15,7 +15,8 @@ OpenAI's [Whisper](https://platform.openai.com/docs/guides/speech-to-text) is ge
 1. Download the YouTube video as a .wav file using [pytube](https://pytube.io/en/latest/)
 2. Diarize and transcribe the video using [assemblyai](https://www.assemblyai.com/docs/speech-to-text/speaker-diarization)
 3. Colloquialize the old Russian-to-English translation into modern speak using OpenAI's chat API
-### Code to get you there 
+
+## Code to get you there 
 [GitHub Repo Link](https://github.com/vamsiuppala/translate-video.git) with code and, transcribed and translated files.
 
 **First, import required packages**
