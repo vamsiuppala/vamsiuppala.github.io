@@ -1,8 +1,8 @@
 # Speaker Recognition and Translation
 
-I was reading Vicki Boykis' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian Video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
+I was reading [Vicki Boykis](https://twitter.com/vboykis)' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian Video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
 
-In a Vicki fashion, she encouraged folks to transcribe and translate this video into Russian. 
+In Vicki's fashion, she encouraged folks to transcribe and translate this video into Russian. 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">^ BTW if anyone wants to uSe ArTifIciAl inTellIgEnCE, transcribing this video in Russian and translating into English would be a fantastic and practical use-case!</p>&mdash; vicki (@vboykis) <a href="https://twitter.com/vboykis/status/1767918512981364986?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -224,4 +224,3 @@ Assistant: <!DOCTYPE html>
 ```
 
 They've added more details to a [GitHub repo](https://github.com/hundredblocks/transcription_demo.git), but there aren't many details on the steps to chunk the video into parts and the level of human effort that went into everything.
-
