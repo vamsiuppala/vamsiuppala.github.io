@@ -1,8 +1,11 @@
+# Speaker Recognition and Translation
+
 I was reading Vicki Boykis' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian Video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
 
-![](../images/2024-03-15-speaker_recognition_and_translation/Pasted%20image%2020240315114436.png)
+In a Vicki fashion, she encouraged folks to transcribe and translate this video into Russian. 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New post on this video I saw a few months back and can&#39;t stop thinking about: when people are in a group, they will defer to the opinion of the group, even on objective things: <a href="https://t.co/PCMV8R8YH9">https://t.co/PCMV8R8YH9</a></p>&mdash; vicki (@vboykis) <a href="https://twitter.com/vboykis/status/1767912671037247709?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In a Vicki fashion, she encouraged folks to transcribe and translate this video into Russian. And so I did.
+And so I did.
 
 OpenAI's [Whisper](https://platform.openai.com/docs/guides/speech-to-text) is generally able to both transcribe and translate audio files directly using a easy to use Audio API. But, since Whisper model doesn't do speaker diarization (distinguish between multiple speakers). Since this video had multiple speakers, I had to break the process into multiple steps:
 
