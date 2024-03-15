@@ -3,7 +3,6 @@
 I was reading Vicki Boykis' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian Video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
 
 In a Vicki fashion, she encouraged folks to transcribe and translate this video into Russian. 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New post on this video I saw a few months back and can&#39;t stop thinking about: when people are in a group, they will defer to the opinion of the group, even on objective things: <a href="https://t.co/PCMV8R8YH9">https://t.co/PCMV8R8YH9</a></p>&mdash; vicki (@vboykis) <a href="https://twitter.com/vboykis/status/1767912671037247709?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">^ BTW if anyone wants to uSe ArTifIciAl inTellIgEnCE, transcribing this video in Russian and translating into English would be a fantastic and practical use-case!</p>&mdash; vicki (@vboykis) <a href="https://twitter.com/vboykis/status/1767918512981364986?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
