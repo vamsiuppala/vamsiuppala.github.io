@@ -1,8 +1,8 @@
 # Speaker Recognition and Translation
 
-I was reading [Vicki Boykis](https://twitter.com/vboykis)' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian Video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
+I was reading [Vicki Boykis](https://twitter.com/vboykis)' blog post - [Both Pyramids Are White](https://vickiboykis.com/2024/03/13/both-pyramids-are-white/) on how groups collectively think. The entire post revolves around a [1971 Russian video](https://www.youtube.com/watch?v=_LYe58b-3HM) that is difficult for any non Russian speakers to understand. 
 
-In Vicki's fashion, she encouraged folks to transcribe and translate this video into Russian. 
+In Vicki's fashion, she encouraged folks to transcribe and translate this video into English from Russian. 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">^ BTW if anyone wants to uSe ArTifIciAl inTellIgEnCE, transcribing this video in Russian and translating into English would be a fantastic and practical use-case!</p>&mdash; vicki (@vboykis) <a href="https://twitter.com/vboykis/status/1767918512981364986?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -10,14 +10,13 @@ In Vicki's fashion, she encouraged folks to transcribe and translate this video 
 
 And so I did.
 
-OpenAI's [Whisper](https://platform.openai.com/docs/guides/speech-to-text) is generally able to both transcribe and translate audio files directly using a easy to use Audio API. But, since Whisper model doesn't do speaker diarization (distinguish between multiple speakers). Since this video had multiple speakers, I had to break the process into multiple steps:
+OpenAI's [Whisper](https://platform.openai.com/docs/guides/speech-to-text) is generally able to both transcribe and translate audio files directly using a easy to use Audio API. But, Whisper doesn't do speaker diarization (distinguish between multiple speakers). Since this video had multiple speakers, I had to break the process into multiple steps:
 
-1. Download the YouTube video as a .wav file using pytube
-2. Diarize and transcribe the video using assemblyai
+1. Download the YouTube video as a .wav file using [pytube](https://pytube.io/en/latest/)
+2. Diarize and transcribe the video using [assemblyai](https://www.assemblyai.com/docs/speech-to-text/speaker-diarization)
 3. Colloquialize the old Russian-to-English translation into modern speak using OpenAI's chat API
-
 ### Code to get you there 
-[GitHub Repo Link](https://github.com/vamsiuppala/translate-video.git) with code, transcribed and translated files.
+[GitHub Repo Link](https://github.com/vamsiuppala/translate-video.git) with code and, transcribed and translated files.
 
 **First, import required packages**
 
@@ -162,16 +161,19 @@ Speaker C: Often, when a new lawyer starts in court or as a prosecutor, they can
 ```
 
 
-### How can we make it better?
-As you can tell, neither the translation nor its colloquial version are perfect. I believe this could be significantly improved with a better frame system prompt and using advanced versions of the GPT models, or the competitors from Mistral, Meta, Anthropic et al. 
+## How can we make it better?
+
+As you can tell, neither the translation nor its colloquial version are perfect. 
+
+I believe this could be significantly improved with a better frame system prompt and using 
+advanced versions of the GPT models, or the competitors from Mistral, Meta, Anthropic et al. 
 
 Let me know if you have any ideas on how to improve either speaker diarization or the translation.
-
 
 We could also turn the video into a readable blog post, with screenshots and sectional speaker summarization. It probably involves a ton of prompt engineering and manual edits, but could save hours of manual transcription. There's one great recent example:
 
 ### Turn a technical video into a writeup
-[Emmanuel](https://twitter.com/mlpowered) and [Erik](https://twitter.com/ErikSchluntz) do a great job transcribing and using prompt engineering to create a blog post out of a two hour video tutorial on Tokenization by [Karpathy](https://twitter.com/karpathy). 
+[Emmanuel](https://twitter.com/mlpowered) and [Erik](https://twitter.com/ErikSchluntz), from Anthropic, do a great job transcribing and using prompt engineering to create a blog post out of a two hour video tutorial on Tokenization by [Karpathy](https://twitter.com/karpathy). 
 
 **Video:**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zduSFxRajkE?si=TG8FcnQmK4CSYwWa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -182,7 +184,7 @@ In their words,
 >
 To produce it, we used a transcript of the video along with screencaps taken every few seconds. We then chunked it into N parts, and passed each part through the prompt below. No further editing was done.
 
-The resulting model-generated course - [LLM Tokenization](https://hundredblocks.github.io/transcription_demo/)
+The resulting model-generated course is here - [LLM Tokenization](https://hundredblocks.github.io/transcription_demo/)
 
 **Prompt passed on to Claude 3 Opus:**
 ```
@@ -224,3 +226,5 @@ Assistant: <!DOCTYPE html>
 ```
 
 They've added more details to a [GitHub repo](https://github.com/hundredblocks/transcription_demo.git), but there aren't many details on the steps to chunk the video into parts and the level of human effort that went into everything.
+
+If you have other suggestions on how to improve, I'm available to chat. Reach out on [Linkedin](https://www.linkedin.com/in/vamsiuppala/) or [Twitter](https://twitter.com/vamsified)! Thanks to [Vicki](https://vickiboykis.com/) for inspiring this effort.
