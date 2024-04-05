@@ -1410,3 +1410,113 @@ With the language model loaded, you can ask it questions like "What is the meani
 
 
 Overall, MLC LLM provides a powerful way to run large language models on local devices, enabling new applications and use cases for natural language processing.
+## [12 Llama.cpp & Its Cross-Platform Abilities](https://www.youtube.com/watch?v=jkrNMKz9pWU&t=5262s)
+
+  
+  
+
+### Exploring Language Model Options
+
+  
+  
+  
+
+There are several options available for running language models using Python. One popular choice is to use PyTorch and the Hugging Face ecosystem, especially if you have an Nvidia graphics card and are comfortable with Python programming.
+
+  
+  
+  
+
+<img src="/images/2024-04-04-hackers_guide_to_language_models/05382.jpg"/>
+
+  
+
+<a href="https://www.youtube.com/watch?v=jkrNMKz9pWU&t=5382s">Link to video</a>
+
+  
+  
+  
+
+Another option is llama.cpp, which can run on various platforms, including Macs and Cuda. It uses the ggml format, and you can download pre-trained models from Hugging Face. Here's an example of how to use it:
+
+  
+  
+  
+
+```python
+
+  
+
+from llama_cpp import Llama
+
+  
+  
+  
+
+llm = Llama(model_path="/home/jhoward/git/llamacpp/llama-2-7b-chat.ggml")
+
+  
+
+output = llm("Q: Name the planets in the solar system? A: ", max_tokens=32, stop="\n", echo=True)
+
+  
+
+print(output['choices'])
+
+  
+
+```
+
+  
+  
+  
+
+This will output:
+
+  
+  
+  
+
+```
+
+  
+
+[{'text': 'Q: Name the planets in the solar system? A: 1. Pluto (no longer considered a planet) 2. Mercury 3. Venus 4. Earth 5. Mars 6.', 'index': 0, 'logprobs': None, 'finish_reason': 'length'}]
+
+  
+
+```
+
+  
+  
+  
+
+### Getting Help and Staying Updated
+
+  
+  
+  
+
+As language models are rapidly evolving, it's essential to seek help from the community and stay updated with the latest developments. Discord channels, such as the fast.ai Discord server, can be valuable resources for asking questions and sharing insights.
+
+  
+  
+  
+
+<img src="/images/2024-04-04-hackers_guide_to_language_models/05442.jpg"/>
+
+  
+
+<a href="https://www.youtube.com/watch?v=jkrNMKz9pWU&t=5442s">Link to video</a>
+
+  
+  
+  
+
+While language models are exciting, it's important to note that they are still in their early stages, and there may be edge cases and installation challenges. However, this is an excellent time to get involved and explore the possibilities of language models, especially if you're comfortable with Python programming.
+
+  
+  
+  
+
+Overall, language models offer a powerful tool for various applications, and with the right resources and community support, you can embark on an exciting journey of exploration and discovery.
