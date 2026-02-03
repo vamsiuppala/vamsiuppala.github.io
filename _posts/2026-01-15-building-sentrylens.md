@@ -1,4 +1,4 @@
-# SentryLens Blog Posts
+# SentryLens - An attempt at developing an agentic AI system for error triage
 
 Technical blog posts documenting the development of SentryLens, an agentic AI system for error triage.
 
