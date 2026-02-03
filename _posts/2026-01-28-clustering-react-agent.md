@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building SentryLens Part 2: Clustering and the ReAct Agent"
-date: 2026-02-02
+date: 2026-01-28
 categories: [ml-engineering, clustering, llm-agents]
 ---
 
