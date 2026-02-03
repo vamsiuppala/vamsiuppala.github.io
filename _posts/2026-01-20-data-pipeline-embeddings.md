@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building SentryLens Part 1: Data Pipeline and Semantic Embeddings"
-date: 2026-02-02
+date: 2026-01-20
 categories: [ml-engineering, embeddings, error-triage]
 ---
 
